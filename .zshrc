@@ -15,12 +15,12 @@ export EDITOR=/usr/bin/nvim
 export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
 
 # Themes
-source /home/radioaddition/.zsh/themes/powerlevel10k/powerlevel10k.zsh-theme
+source /home/radioaddition/.zsh/powerlevel10k/powerlevel10k.zsh-theme
 
 # Plugins
-source /home/radioaddition/.zsh/plugins/F-Sy-H/F-Sy-H.plugin.zsh
-source /home/radioaddition/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/radioaddition/.zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
+source /home/radioaddition/.zsh/F-Sy-H/F-Sy-H.plugin.zsh
+source /home/radioaddition/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /home/radioaddition/.zsh/zsh-vi-mode/zsh-vi-mode.zsh
 
 # Aliases
 alias btop="btop --utf-force"

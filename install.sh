@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-ln -s .zshrc ../.zshrc
-ln -s .p10k.zsh ../.p10k.zsh
+cp ./.zshrc ~/.zshrc
+cp ./.p10k.zsh ~/.p10k.zsh
