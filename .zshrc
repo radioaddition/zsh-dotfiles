@@ -7,20 +7,23 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Created by `pipx` on 2024-03-17 15:28:36
-export PATH="$PATH:/home/radioaddition/.local/bin"
-
 # Variables
 export EDITOR=/usr/bin/nvim
 export GUIX_LOCPATH="$HOME/.guix-profile/lib/locale"
 
+# Plugin Manager (Antigen)
+source ~/.zsh/antigen.zsh
+
 # Themes
-source /home/radioaddition/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+antigen theme romkatv/powerlevel10k
 
 # Plugins
-source /home/radioaddition/.zsh/F-Sy-H/F-Sy-H.plugin.zsh
-source /home/radioaddition/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /home/radioaddition/.zsh/zsh-vi-mode/zsh-vi-mode.zsh
+antigen bundle jeffreytse/zsh-vi-mode
+antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle z-shell/F-Sy-H --branch=main
+
+# Load
+antigen apply
 
 # Aliases
 alias btop="btop --utf-force"
